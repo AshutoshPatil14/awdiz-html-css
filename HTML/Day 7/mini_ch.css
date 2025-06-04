@@ -1,0 +1,28 @@
+.heading-color {
+    color:#1abc9c
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+.font-poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-18px{
+    font-size: 18px;
+}
+
+.line-height{
+    line-height: 1.6;
+}
+
+.font-gray{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.no-formatting{
+    text-decoration: none;
+    color: black;
+}

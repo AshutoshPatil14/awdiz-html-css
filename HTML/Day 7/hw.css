@@ -1,0 +1,27 @@
+
+
+.no-formatting{
+    text-decoration: none;
+    color: black;
+}
+
+.font-roboto{
+    font-family: "Roboto", sans-serif;
+}
+
+.style1{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: rgba(40, 141, 17, 0.947);
+    letter-spacing: 3px;
+    line-height: 22px;
+}
+
+.style2{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: rgba(29, 26, 212, 0.9);
+    background-color: rgba(240, 141, 17, 0.947);
+}
