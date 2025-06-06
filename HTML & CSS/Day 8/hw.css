@@ -1,0 +1,32 @@
+.box1 {
+    width: 300px;
+    margin: 50px;
+    padding: 70px;
+    border: 8px solid purple;
+    border-radius: 10%;
+    box-sizing: border-box;
+    /* display: inline; */
+}
+
+.box2 {
+    width:fit-content;
+    margin: 20px;
+    padding: 40px;
+    border: 14px dashed green;
+    border-radius: 40%;
+    box-sizing: content-box;
+    /* display: inline; */
+
+}
+
+.box3 {
+    width: fit-content;
+    margin: 70px;
+    padding: 70px;
+    border: 8px dotted purple;
+    border-radius: 20%;
+    box-sizing: content-box;
+    /* display: inline; */
+
+}
+
