@@ -1,89 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10th Day of learning HTML & CSS</title>
+    <title>myntra</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <!-- Top navigation bar content -->
-            <div class="logo">M</div>
-            <ul class="nav-links">
-                <li><a href="#">MEN</a></li>
-                <li><a href="#">WOMEN</a></li>
-                <li><a href="#">KIDS</a></li>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">BEAUTY</a></li>
-                <li><a href="#">GENZ</a></li>
-                <li><a href="#">STUDIO <sup>NEW</sup></a></li>
-            </ul>
-            <div class="search-bar">
-                <input type="text" placeholder="Search for products, brands and more">
+    <div class="main">
+        <div class="navbar">
+            <div class="m-logo">
+                <img src="https://aartisto.com/wp-content/uploads/2020/11/myntra.png" alt="Myntra Logo">
             </div>
-            <div class="user-actions">
-                <span>Profile</span>
-                <span>Wishlist</span>
-                <span>Bag</span>
+            <div class="nav-items">
+                <a class="nav-btn" href="#">MEN</a>
+                <a class="nav-btn" href="#">WOMEN</a>
+                <a class="nav-btn" href="#">KIDS</a>
+                <a class="nav-btn" href="#">HOME</a>
+                <a class="nav-btn" href="#">BEAUTY</a>
+                <a class="nav-btn" href="#">GENZ</a>
+                <a class="nav-btn studio-btn" href="#">STUDIO<sup>NEW</sup></a>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="breadcrumb">
-            Home / Clothing / Men T-Shirts
-        </div>
-        <div class="page-title">
-            Men T-Shirts - 219908 items
-        </div>
-
-        <div class="content-area">
-            <aside class="filters">
-                <!-- Filters section - content removed as requested -->
-            </aside>
-
-            <section class="product-grid">
-                <div class="sort-options">
-                    <span>Sort by : Recommended</span>
+            <div class="search-bar display-flex">
+                <div class="search-icon">
+                    <img src="https://toppng.com/uploads/preview/search-magnifying-glass-icon-png-grey-1156361611872u4ycd60h.png"
+                        alt="Search Icon">
                 </div>
-                <div class="products">
-                    <!-- Product cards will go here -->
-                    <div class="product-card">
-                        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_240,c_limit,f_jpg/assets/images/11874116/2020/6/1/e0440866-419a-412a-8929-232126201e5b1591000000000-Jack--Jones-Men-T-shirts-7371591000000000-1.jpg" alt="Product Image">
-                        <h3>Jack & Jones</h3>
-                        <p>Men Printed T-shirt</p>
-                        <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
-                        <p>Only Few Left!</p>
+                <div class="search-input-bar">
+                    <input type="text" placeholder="Search for products, brands and more">
+                </div>
+            </div>
+            <div class="profile-actions display-flex justify-content-center align-items-center">
+                <div class="handy-items justify-content-center">
+                    <div>
+                        <img class="handy-icons handy-width"
+                            src="https://cdn-icons-png.flaticon.com/512/3682/3682281.png"
+                            alt="Profile Icon">
                     </div>
-                    <div class="product-card">
-                        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_240,c_limit,f_jpg/assets/images/17000000/2022/1/1/e0440866-419a-412a-8929-232126201e5b1591000000000-Jack--Jones-Men-T-shirts-7371591000000000-1.jpg" alt="Product Image">
-                        <h3>THE BEAR HOUSE</h3>
-                        <p>Men Printed Cotton T-shirt</p>
-                        <p>Rs. 1599 <del>Rs. 3999</del> (60% OFF)</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_240,c_limit,f_jpg/assets/images/17000000/2022/1/1/e0440866-419a-412a-8929-232126201e5b1591000000000-Jack--Jones-Men-T-shirts-7371591000000000-1.jpg" alt="Product Image">
-                        <h3>H&M</h3>
-                        <p>Loose Fit Printed T-shirt</p>
-                        <p>Rs. 479 <del>Rs. 799</del> (40% OFF)</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_240,c_limit,f_jpg/assets/images/17000000/2022/1/1/e0440866-419a-412a-8929-232126201e5b1591000000000-Jack--Jones-Men-T-shirts-7371591000000000-1.jpg" alt="Product Image">
-                        <h3>Levis</h3>
-                        <p>Solid Lounge T-shirt</p>
-                        <p>Rs. 311 <del>Rs. 649</del> (57% OFF)</p>
-                    </div>
-                    <div class="product-card">
-                        <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_240,c_limit,f_jpg/assets/images/17000000/2022/1/1/e0440866-419a-412a-8929-232126201e5b1591000000000-Jack--Jones-Men-T-shirts-7371591000000000-1.jpg" alt="Product Image">
-                        <h3>H&M</h3>
-                        <p>Loose Fit Printed T-shirt</p>
-                        <p>Rs. 479 <del>Rs. 799</del> (40% OFF)</p>
+                    <div>
+                        <p>Profile</p>
                     </div>
                 </div>
-            </section>
+                <div class="handy-items justify-content-center">
+                    <div>
+                        <img class="handy-icons handy-width"
+                            src="https://icon-library.com/images/wishlist-icon/wishlist-icon-19.jpg"
+                            alt="Wishlist Icon">
+                    </div>
+                    <div>
+                        <p>Wishlist</p>
+                    </div>
+                </div>
+                <div class="handy-items  justify-content-center">
+                    <div>
+                        <img class="handy-icons handy-width"
+                            src="https://cdn-icons-png.flaticon.com/256/1174/1174408.png">
+                    </div>
+                    <div>
+                        <p>Bag</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </main>
+        <div class="body">
+            <div class="body-head fontsize-14px">
+                <div>
+                    <div class="margin-15px-10px">
+                        <p>Home / Clothing / <span class="font-weight-bold">Men T-shirts</span></p>
+                    </div>
+                    <div class="margin-15px-10px">
+                        <p><span class="font-weight-bold">Men T-shirts</span> - 220264 items
+                        </p>
+                    </div>
+                    <div class="display-flex">
+                        <div class="filters font-weight-bold margin-10px ">
+                            <p>FILTERS</p>
+                        </div>
+                        <div class="sort-bar display-flex justify-content-between">
+                            <div class="sort-btn-box display-flex justify-content-between align-items-center">
+                                <div><button class=" sort-btn">Bundle</button></div>
+                                <div><button class=" sort-btn">Counter of Origin</button></div>
+                                <div><button class=" sort-btn">Size</button></div>
+                            </div>
+                            <div class="sort">
+                                Sort by : <span class="font-weight-bold">Recommended</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="display-flex">
+
+                </div>
+
+            </div>
+            <div class="actual-body">
+                <div class="body-left">
+                    <div class="categories padding-10px">
+                        <div>
+                            <h5 class="margin-10px">CATEGORIES</h5>
+                        </div>
+                        <div>
+
+                            <input type="checkbox" name="t-shirts" id="t-shirt">
+                            <label for="t-shirt">T-shirts</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="lounge-t-shirts" id="lounge-t-shirt">
+                            <label for="lounge-t-shirt">Lounge Tshirts</label>
+                        </div>
+                    </div>
+                    <div class="brand padding-10px">
+                        <div class="margin-10px">
+                            <h5>BRAND</h5>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="jack-jones" id="jack-jones">
+                            <label for="jack-jones">Jack & Jones</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="levis" id="levis">
+                            <label for="levis">Levis</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="puma" id="puma">
+                            <label for="puma">Puma</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="reebok" id="reebok">
+                            <label for="reebok">Reebok</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="adidas" id="adidas">
+                            <label for="adidas">Adidas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="nike" id="nike">
+                            <label for="nike">Nike</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="zara" id="zara">
+                            <label for="zara">Zara</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="fila" id="fila">
+                            <label for="fila">Fila</label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="body-right">
+                    <div class="product-row">
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://m.media-amazon.com/images/I/51B8eIkAnYL._AC_UY1100_.jpg"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://veirdo.in/cdn/shop/files/01_0004_8_9550f34c-29a5-445a-98cc-7038d725642d.jpg?v=1733466511">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="https://3.imimg.com/data3/UM/BK/MY-10239289/ajk-sl-1973.jpg"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://m.media-amazon.com/images/I/51x-JTpdL6L._AC_UY1100_.jpg"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwgMrXPhjebm6T5jZBHOi4tdu8VH2lDyGaLdwYhLdoRmOGaplSOqYui5lMm108Q2crA88&usqp=CAU"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                    </div>
+                    <div class="product-row reverse-row">
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://m.media-amazon.com/images/I/51B8eIkAnYL._AC_UY1100_.jpg"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img" src="https://3.imimg.com/data3/UM/BK/MY-10239289/ajk-sl-1973.jpg"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://m.media-amazon.com/images/I/51x-JTpdL6L._AC_UY1100_.jpg"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwgMrXPhjebm6T5jZBHOi4tdu8VH2lDyGaLdwYhLdoRmOGaplSOqYui5lMm108Q2crA88&usqp=CAU"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                        <div class="product-card">
+                            <img class="product-img"
+                                src="https://images.meesho.com/images/products/286174815/vt2zc_512.webp"
+                                alt="Product Image">
+                            <h3>Jack & Jones</h3>
+                            <p>Men Printed T-shirt</p>
+                            <p>Rs. 1679 <del>Rs. 2799</del> (40% OFF)</p>
+                            <p>Only Few Left!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
