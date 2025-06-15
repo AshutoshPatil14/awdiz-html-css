@@ -5,12 +5,9 @@
     font-family: Helvetica;
 }
 
-div{
+/* div{
     border: 1px solid red;
-}
-
-/* navbar section starts here */
-
+} */
 
 .navbar{
     display: flex;
@@ -29,6 +26,7 @@ div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     width: 30%;
 }
 
@@ -40,7 +38,7 @@ div{
 }
 
 .nav-actions{
-    width: 25%;
+    width: 22%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;          
@@ -73,8 +71,7 @@ div{
 }
 
 .log-in{
-    width: 22%;
-    margin-left: 25px;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -85,51 +82,35 @@ div{
     font-size: 12px;
 }
 
-#search-icon{
-    display: none;
-}
-
 .menu-icon{
     display: none;
 }
 
-/* navbar section ends here */
-
-
 @media(max-width: 600px){
-
-/* navbar section starts here */
-
     .navbar{
         padding: 10px;
     }
-
-    .nav-items{
-        display: none;
-    }
-
-    .menu-icon{
-        display: block;
-    }
-
-    .nav-actions{
-        width: 40%;
-    }
-
-    .search-bar{
-        display: none;
-    }
-
-    .log-in{
-        display: none;
-    }
-
-    #search-icon{
-        display: block;
-    }
-    
-/* navbar section ends here */
-
 }
 
+.nav-items{
+    display: none;
+}
+
+.nav-actions{
+    width: 40%;
+}
+
+.search-bar{
+    display: none;
+}
+
+.log-in{
+    display: none;
+}
+
+.menu-icon{
+    display: block;
+}
+
+/* navbar section ends here */
 
