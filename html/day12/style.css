@@ -5,9 +5,9 @@
     font-family: Helvetica;
 }
 
-div{
+/* div{
     border: 1px solid red;
-}
+} */
 
 /* navbar section starts here */
 
@@ -95,6 +95,82 @@ div{
 
 /* navbar section ends here */
 
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(https://static.wixstatic.com/media/c837a6_47b79e5c794c44479756b0253e68dc65~mv2.jpg/v1/fill/w_1768,h_856,fp_0.08_0.00,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hero.jpg);
+    width: 94%;
+    margin: 0 auto;
+    height: 90vh;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.hero-content{
+    width: 50%;
+    padding: 40px;
+}
+
+
+.hero-content p{
+    font-size: 80px;
+    font-weight: bolder;
+    font-family: "Wix Madefor Display", sans-serif;
+}
+
+.hero-card{
+    width: 50%;
+    display: flex;
+}
+
+.hero-display-card{
+    padding: 20px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 65%;
+    align-items: center;
+}
+
+.hero-card-image{
+    width: 100%;
+}
+
+.hero-card-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.hero-card-content{
+    width: 100%;
+}
+
+.hero-card-content h4{
+    margin: 10px 0;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.color-blue{
+    color: #0075ff;
+}
+
+.btn-atc{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1570c3;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.lower-hero-card{
+    display: none;
+}
+
 
 @media(max-width: 600px){
 
@@ -129,6 +205,85 @@ div{
     }
     
 /* navbar section ends here */
+
+/* hero section starts here */
+
+.hero{
+    width: 94%;
+    height: 80vh;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position:  -200px;
+    background-size: cover;
+
+}
+
+.hero-content{
+    width: 100%;
+    padding: 20px;
+}
+
+.hero-content p{
+    font-size: 50px;
+}
+
+.hero-content h1{
+    font-size: 18px;
+}
+
+.hero-card{
+    display: none;
+}
+
+.lower-hero-card{
+    display: block;
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+.lower-hero-display-card{
+    padding: 20px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 65%;
+    align-items: center;
+}
+
+.lower-hero-card-image{
+    width: 100%;
+}
+
+.lower-hero-card-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.lower-hero-card-content{
+    width: 100%;
+}
+
+.lower-hero-card-content h4{
+    margin: 10px 0;
+}
+
+.lower-hero-card-content p{
+    margin: 10px 0;
+}
+
+.lower-hero-card-content .line-through{
+    font-size: 12px;
+}
+
+.lower-hero-card-content .color-blue{
+    font-size: 12px;
+}
+
+.lower-hero-card-content .btn-atc{
+    padding: 5px 10px;
+    font-size: 12px;
+}
 
 }
 
