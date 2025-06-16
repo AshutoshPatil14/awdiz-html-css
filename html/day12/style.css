@@ -21,10 +21,6 @@
     padding: 25px 38px;
 }
 
-.brand-name{
-
-}
-
 .nav-items{
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +91,9 @@
 
 /* navbar section ends here */
 
+/* hero section starts here */
+
+
 .hero{
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +148,10 @@
     margin: 10px 0;
 }
 
+.hero-card-content p{
+    margin: 10px 0;
+}
+
 .line-through{
     text-decoration: line-through;
 }
@@ -156,6 +159,7 @@
 .color-blue{
     color: #0075ff;
 }
+
 
 .btn-atc{
     padding: 10px 20px;
@@ -170,6 +174,140 @@
 .lower-hero-card{
     display: none;
 }
+
+/* lower hero section ends here */
+
+/* best seller section starts here */
+
+.best-seller{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.best-seller-headline{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.best-seller-headline h2{
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.best-seller-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.bs-card{
+    width: 23%;
+}
+
+.bs-card-image{
+    width: 100%;
+}
+
+.bs-card-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.bs-card-content{
+    width: 100%;
+}
+
+.bs-card-content h4{
+    margin: 10px 0;
+}
+
+.bs-card-content p{
+    margin: 10px 0;
+}
+
+/* best seller section ends here */
+
+/* kids collection banner section starts here */
+
+.kids-collection-banner{
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kids-collection-banner-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.kids-collection-banner-content{
+    width: 48%;
+}
+
+.kids-collection-banner-content h1{
+    font-size: 57px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.kids-collection-banner-content p{
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.kids-collection-banner-content button{
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1570c3;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+.kids-collection-banner-image{
+    width: 48%;
+    
+}
+
+.kids-collection-banner-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.lower-kids-collection-banner-image{
+    display: none;
+}
+
+
+
+
+/* kids collection banner section ends here */
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 600px){
@@ -215,7 +353,7 @@
     background-repeat: no-repeat;
     background-position:  -200px;
     background-size: cover;
-
+    border-radius: 10px;
 }
 
 .hero-content{
@@ -235,55 +373,123 @@
     display: none;
 }
 
-.lower-hero-card{
-    display: block;
-    margin-top: 20px;
+/* lower hero card starts here */
 
+.lower-hero-card{
+    display: flex;
+    margin-top: 20px;
     width: 100%;
+    
 }
 
 .lower-hero-display-card{
-    padding: 20px;
+    /* padding: 20px; */
     margin: auto;
-    background-color: #ffffff;
-    border-radius: 20px;
-    width: 65%;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 94%;
     align-items: center;
 }
 
 .lower-hero-card-image{
     width: 100%;
+    border-radius: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .lower-hero-card-image img{
-    width: 100%;
-    border-radius: 20px;
+    width: 89%;
+    border-radius: 10px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .lower-hero-card-content{
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .lower-hero-card-content h4{
+    margin: 10px 20px;
+}
+
+.lower-hero-card-content button{
+    margin: 10px 20px;
+    width: 90%;
+}
+
+/* lower hero csrd section ends here */
+
+/* best seller section starts here */
+
+.best-seller{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.best-seller-cards{
+    margin: 20px auto;
+}
+
+.bs-card{
+    width: 48%;
     margin: 10px 0;
 }
 
-.lower-hero-card-content p{
-    margin: 10px 0;
+.bs-card-image img{
+    border-radius: 10px;
 }
 
-.lower-hero-card-content .line-through{
-    font-size: 12px;
+
+/* best seller section ends here */
+
+/* kids collection section starts here */
+
+.kids-collection-banner-box{
+    flex-direction: column;
+    width: 100%;
 }
 
-.lower-hero-card-content .color-blue{
-    font-size: 12px;
+.kids-collection-banner-content{
+    width: 100%;
 }
 
-.lower-hero-card-content .btn-atc{
-    padding: 5px 10px;
-    font-size: 12px;
+.kids-collection-banner-content h1{
+    font-size: 42px;
 }
+
+.kids-collection-banner-content p{
+    font-size: 16px;
+}
+
+.kids-collection-banner-content button{
+    margin-top: 15px;
+    padding: 15px 27px;
+    font-size: 15px;
+
+} 
+
+.kids-collection-banner-image{
+display: none;
+}
+
+.lower-kids-collection-banner-image{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    background-image: url(https://static.wixstatic.com/media/c837a6_6fdee1f4ad5943009a8f74d6d286c71a~mv2.jpg/v1/fill/w_861,h_861,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Kids%20Sale.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
 
 }
 
