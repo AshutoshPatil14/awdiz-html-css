@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Reliance Digital</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+
+<body>
+    <div class="reg-form">
+        <form class="form">
+            <h2>Create your account</h2>
+            <label for="fullname">Full Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="e.g. Ted Mosby">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="e.g. ted@gmail.com">
+            <label for="number">Mobile Number</label>
+            <input type="tel" name="number" id="number" placeholder="e.g. 9876543210" required minlength="10"
+                maxlength="10">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required minlength="8" maxlength="16" required
+                placeholder="Create Password">
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" name="cpassword" id="cpassword" required minlength="8" maxlength="16" required
+                placeholder="Confirm Password">
+            <button type="submit">Register</button>
+            <p class="login-link">
+                Already have an account? <a href="login.html">Login here</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
