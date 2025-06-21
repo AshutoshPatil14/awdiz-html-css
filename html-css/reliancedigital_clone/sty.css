@@ -110,7 +110,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
+  }
 
   .login-form img{
     margin-bottom: 20px;
