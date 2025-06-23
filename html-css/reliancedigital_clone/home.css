@@ -119,6 +119,7 @@ main {
 .hero-banner img {
     width: 100%;
     border-radius: 8px;
+    margin: 10px 0;
 }
 
 .featured-categories {
