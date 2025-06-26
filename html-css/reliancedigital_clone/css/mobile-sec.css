@@ -490,7 +490,7 @@ footer {
 
 .payment-methods img {
     height: 25px;
-    background: white;
+    background: #1a1a1a;
     padding: 3px;
     border-radius: 4px;
 }
