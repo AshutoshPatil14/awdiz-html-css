@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* div {
+/* div main section {
     border: 1px solid blue;
 } */
 
@@ -105,12 +105,13 @@ header {
 .lower-header {
     background-color: #ffffff;
     padding: 10px 32px;
-    overflow: contain;
+    overflow-x: scroll;
 }
 
 
 .lower-header nav {
     display: flex;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
@@ -125,6 +126,7 @@ header {
 
 .header-navs {
     width: 9%;
+    min-width: 110px;
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
@@ -590,25 +592,6 @@ footer {
 
     .lower-header {
         padding: 5px 12px;
-    }
-
-    .lower-header nav {
-        display: none;
-    }
-
-    .filter {
-        display: flex;
-        padding-left: 0px;
-    }
-
-    .filter button {
-        color: #ffffff;
-        font-size: 16px;
-        font-weight: bold;
-        background-color: #ff392b;
-        border: none;
-        border-radius: 20px;
-        padding: 7px;
     }
 
     main {
