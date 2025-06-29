@@ -4,21 +4,15 @@
   box-sizing: border-box;
 }
 
-* {
-  overflow: auto; /* or scroll */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+html {
+  scrollbar-width: none;
 }
 
-*::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Edge (WebKit) */
-}
-
-div,
+/* div,
 main,
 section {
-  /* border: 1px solid blue; */
-}
+  border: 1px solid blue;
+} */
 
 body {
   background-color: #f5f5f5;
@@ -192,21 +186,21 @@ header {
 }
 
 .empty-cart button {
-    width: 100%;
-    display: flex;
-    background: none;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    padding: 7px 8px;
+  width: 100%;
+  display: flex;
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 7px 8px;
 }
 
 .empty-cart button:hover {
-    opacity: 0.8;
-    border-radius: 20px;
-    background-color: #cccccc;
+  opacity: 0.8;
+  border-radius: 20px;
+  background-color: #cccccc;
 }
 
 .empty-cart img {
@@ -231,7 +225,6 @@ header {
   min-width: 730px;
 }
 
-
 .cart-item-card {
   width: 100%;
   display: flex;
@@ -241,6 +234,7 @@ header {
   padding: 10px;
   margin: 10px 0;
   border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card-upper-part {
@@ -249,10 +243,13 @@ header {
   display: flex;
   flex-direction: row;
   background-color: #fff;
-    border: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   padding: 5px;
   margin: 10px 0;
   border-radius: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .item-img {
@@ -338,23 +335,14 @@ header {
   font-size: 15px;
 }
 
-.card-upper-part {
+.card-lower-part {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
-.card-lower-part{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px 0;
-    gap : 10px;
+  justify-content: flex-end;
+  padding: 10px 0;
+  gap: 10px;
 }
 
 .card-lower-part button {
@@ -373,152 +361,135 @@ header {
 }
 
 .right-body {
-    width: 33%;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    /* gap: 20px; */
-    align-items: center;
-    padding: 0 7px;
+  width: 33%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  align-items: center;
+  padding: 0 7px;
 }
 
-.apply-coupon{
-    width: 100%;
-    display: flex;
-    padding: 15px 0;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
+.apply-coupon {
+  width: 100%;
+  display: flex;
+  padding: 15px 0;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
 }
 
 .apply-coupon button {
-    width: 88%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 15px;
-    background-color: transparent;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    cursor: pointer;
+  width: 88%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.apply-coupon-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.apply-coupon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.payment-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 15px 0;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
+.payment-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
 }
 
-.payment-section h4{
-    width: 88%;
-    margin: auto;
-    font-weight: bolder;
+.payment-section h4 {
+  width: 88%;
+  margin: auto;
+  font-weight: bolder;
 }
 
 .payment-description-box {
-    display: flex;
-    width: 88%;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  width: 88%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .payment-description-box p {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .payment-description-box span {
-    font-size: 14px;
-    color: #595959;
-    font-weight: 500;
+  font-size: 14px;
+  color: #595959;
+  font-weight: 500;
 }
-
 
 .payment-description-box2 {
-    display: flex;
-    width: 88%;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    /* border-bottom: 1px solid #e0e0e0; */
-    font-weight: bolder;
+  display: flex;
+  width: 88%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  /* border-bottom: 1px solid #e0e0e0; */
+  font-weight: bolder;
 }
 
-.payment-description-box3{
-    display: flex;
-    width: 88%;
-    margin: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-    /* border-bottom: 1px solid #e0e0e0; */
+.payment-description-box3 {
+  display: flex;
+  width: 88%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  /* border-bottom: 1px solid #e0e0e0; */
 }
 
-.payment-description-box4{
-    display: flex;
+.payment-description-box4 {
+  display: flex;
 }
 
-.payment-description-box4 p{
-    padding: 5px 0;
-    padding-right: 10px;
-    font-size: 17px;
-    border-right: 1px solid #e0e0e0;
+.payment-description-box4 p {
+  padding: 5px 0;
+  padding-right: 10px;
+  font-size: 17px;
+  border-right: 1px solid #e0e0e0;
 }
 
-.payment-description-box4 span{
-    padding: 5px 10px;
-    font-size: 17px;
-    font-weight: bolder;
+.payment-description-box4 span {
+  padding: 5px 10px;
+  font-size: 17px;
+  font-weight: bolder;
 }
 
-.payment-description-box3 button{
-    border: none;
-    background-color: #3535f3;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 17px;
+.payment-description-box3 button {
+  border: none;
+  background-color: #3535f3;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 17px;
 }
 
 .payment-description-box3 button:hover {
-    background-color: #000093;
+  background-color: #000093;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Footer starts here */
 
@@ -795,25 +766,112 @@ footer {
 
   /* main body starts here */
 
-    .cart-container {
-        width: 100%;
-        padding: 10px 0;
-    }
+  .cart-container {
+    width: 100%;
+    padding: 10px 0;
+  }
 
-    .cart-heading{
-        width: 95%;
-        margin: auto;
-    }
+  .cart-heading {
+    width: 95%;
+    margin: auto;
+  }
 
-.empty-cart{
+  .empty-cart {
     width: 30%;
-}
+  }
 
+  .cart-body {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .left-body {
+    width: 100%;
+    /* margin: auto; */
+    min-width: unset;
+  }
 
+  .cart-item-card {
+    border-radius: 0;
+    flex-wrap: wrap;
+  }
 
+  .card-upper-part {
+    width: 100%;
+    min-height: unset;
+    border: none;
+    margin: 0;
+    padding: 10px 0;
+    gap: 0px;
+  }
 
+  .item-img {
+    width: 30%;
+    padding: 0;
+  }
 
+  .item-details {
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .item-description {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .item-description h3 {
+    font-size: 16px;
+  }
+
+  .item-description h2 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .item-description p {
+    font-size: 14px;
+  }
+
+  .item-description span {
+    font-size: 12px;
+  }
+
+  .card-lower-part {
+    justify-content: space-between;
+  }
+
+  .card-lower-part button {
+    width: 49%;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .right-body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .apply-coupon {
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 0;
+  }
+
+  .apply-coupon button {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .payment-section {
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 0;
+  }
 
   /* footer section */
 
