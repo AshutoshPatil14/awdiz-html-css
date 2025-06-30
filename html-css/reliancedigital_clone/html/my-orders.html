@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -129,10 +130,10 @@
                     </div>
                     <p>Account</p>
                     <div class="account-links">
-                        <a class="selected" href="./my-account.html">
+                        <a href="./my-account.html">
                             <img src="../icons/account_circle_24dp_434343_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <span>My Profile</a>
-                        <a href="./my-orders.html">
+                        <a class="selected" href="./my-orders.html">
                             <img src="../icons/orders_24dp_434343_FILL1_wght400_GRAD0_opsz24.svg" alt="">
                             <span>My Orders</span></a>
                         <a href="./my-addresses.html">
@@ -149,42 +150,34 @@
 
                 <div class="right-section">
                     <div class="heading">
-                        <h2>My Profile</h2>
+                        <h2>My Orders</h2>
+                        <select name="order_type" id="order_type">
+                            <option value="all_orders">All Orders</option>
+                            <option value="ordered">Ordered</option>
+                            <option value="under_process">Under Process</option>
+                            <option value="shipped">Shipped</option>
+                            <option value="returned">Returned</option>
+                            <option value="cancelled">Cancelled</option>
+                            <option value="delivered">Delivered</option>
+                        </select>
                     </div>
 
-                    <div class="profile-details">
-                        <div class="profile-details-header">
-                            <p>Personal Details</p>
-                            <button class="edit-btn"><img src="../icons/edit_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg"
-                                    alt=""><span>Edit Profile</span></button>
+                    <div class="order-details">
+                        <div class="order-details-bar">
+                            <span>No of items in list: 2</span>
+                            <p>Order Total: ₹97,998.00</p>
                         </div>
 
-                        <div class="profile-info">
-                            <div class="info-row">
-                                <span class="label">First Name</span>
-                                <span class="value">Ashutosh</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="label">Last Name</span>
-                                <span class="value">Patil</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="label">Date Of Birth</span>
-                                <span class="value">DD/MM/YYYY</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="label">Gender</span>
-                                <span class="value">Male</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="label">Email Address</span>
-                                <span class="value">ashutosh.patil1409@gmail.com</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="label">Mobile Number</span>
-                                <span class="value">9130747809</span>
+                        <div class="order-details-card">
+                            <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/original/lDiLDzASGg-google-pixel9a-5g-494494547-i-1-1200wx1200h.jpeg"
+                                alt="Product Image">
+                            <div class="product-details">
+                                <p>Google Pixel 9a, 256 GB, 8 GB RAM, Obsidian, Mobile Phone</p>
+                                <h4>₹49,999.00</h4>
+                                <span>Qty: 2</span>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
