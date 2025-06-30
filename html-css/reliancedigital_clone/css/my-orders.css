@@ -8,11 +8,11 @@ html {
   scrollbar-width: none;
 }
 
-div,
+/* div,
 main,
 section {
   border: 1px solid blue;
-}
+} */
 
 body {
   background-color: #f5f5f5;
