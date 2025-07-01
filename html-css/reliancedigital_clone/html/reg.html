@@ -12,12 +12,12 @@
 
     <header>
         <div class="upper-header">
-            <div class="text-navs">
+            <!-- <div class="text-navs">
                 <a href="">Orders</a>
                 <a href="">Contact us</a>
                 <a href="">Resource Center</a>
                 <a href="">Find a store</a>
-            </div>
+            </div> -->
             <div class="search-bar-section">
                 <div class="logo">
                     <a href="./homepage.html">
@@ -30,16 +30,22 @@
                 </div>
                 <div class="profile-items">
                     <div class="profile-item">
-                        <img src="../icons/person_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" Account">
-                        <span>Login</span>
+                        <a href="../html/login.html">
+                            <img src="../icons/person_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" Account">
+                            <span>Login</span>
+                        </a>
                     </div>
                     <div class="profile-item">
-                        <img src="../icons/favorite_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Wishlist">
-                        <span>Wishlist</span>
+                        <a href="../html/my-wishlist.html">
+                            <img src="../icons/favorite_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Wishlist">
+                            <span>Wishlist</span>
+                        </a>
                     </div>
                     <div class="profile-item">
-                        <img src="../icons/shopping_cart_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Cart">
-                        <span>Cart</span>
+                        <a href="../html/cart.html">
+                            <img src="../icons/shopping_cart_24dp_E3E3E3_FILL1_wght400_GRAD0_opsz24.svg" alt="Cart">
+                            <span>Cart</span>
+                        </a>
                     </div>
                 </div>
 
@@ -131,6 +137,22 @@
                 <label for="number">Mobile Number</label>
                 <input type="tel" name="number" id="number" placeholder="e.g. 9876543210" required minlength="10"
                     maxlength="10">
+
+                <label for="gender">Gender</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+
+                <div class="register-as">
+                    <label for="registerAs">Register As</label>
+                    <select id="registerAs" name="registerAs" required>
+                        <option value="user">User</option>
+                        <option value="seller">Seller</option>
+                    </select>
+                </div>
+
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" required minlength="8" maxlength="16" required
                     placeholder="Create Password">
