@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Vertical Profile Form</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 20px;
-    }
+  <title>Delivery Addresses</title>
+<style>
+/* ─── Delivery‑content container ─────────────────────────────── */
+.delivery-content{
+  padding: 30px 40px;
+  background:#fff;                /* keep same white panel look */
+  font-family: Arial, sans-serif;
+}
 
-    .profile-card {
-      max-width: 500px;
-      margin: auto;
-      background: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    }
+/* ─── Headline ───────────────────────────────────────────────── */
+.delivery-content h2{
+  margin-top:0;
+  margin-bottom:20px;
+  font-size:22px;
+  font-weight:600;
+}
 
-    .profile-card h2 {
-      margin-top: 0;
-      font-size: 18px;
-      font-weight: bold;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 10px;
-    }
+/* ─── Address card ───────────────────────────────────────────── */
+.address-card{
+  background:#fff;
+  border:1px solid #ddd;
+  border-radius:12px;
+  padding:20px 24px;
+  margin-bottom:20px;
+  box-shadow:0 2px 5px rgba(0,0,0,.05);
+}
 
-    .profile-info {
-      margin-top: 20px;
-    }
+.address-card h4{
+  margin:0 0 6px 0;
+  font-size:16px;
+  font-weight:700;
+}
 
-    .info-row {
-      margin-bottom: 15px;
-    }
+.address-card p{
+  margin:3px 0;
+  color:#555;
+}
 
-    .label {
-      font-weight: bold;
-      display: block;
-      color: #555;
-      margin-bottom: 4px;
-    }
+/* ─── Action buttons ─────────────────────────────────────────── */
+.address-actions{
+  margin-top:12px;
+}
 
-    .value {
-      color: #000;
-    }
+.address-actions button{
+  background:#0066cc;
+  color:#fff;
+  border:none;
+  padding:8px 18px;
+  margin-right:10px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+}
 
-    .edit-btn {
-      float: right;
-      font-size: 14px;
-      text-decoration: none;
-      color: #0047ab;
-    }
+.address-actions button:hover{
+  background:#004999;
+}
 
-    .edit-btn:hover {
-      text-decoration: underline;
-    }
-  </style>
+/* ─── Responsive tweak (optional) ─────────────────────────────── */
+@media (max-width:600px){
+  .delivery-content{padding:20px;}
+  .address-card{padding:16px;}
+}
+</style>
 </head>
+
 <body>
 
-  <div class="profile-card">
-    <h2>
-      Personal Details
-      <a href="#" class="edit-btn">✎ Edit Profile</a>
-    </h2>
+  <!-- ─── Delivery Addresses Section ───────────────────────────── -->
+  <section class="delivery-content">
+    <h2>My Delivery Addresses</h2>
 
-    <div class="profile-info">
-      <div class="info-row">
-        <span class="label">First Name</span>
-        <span class="value">Ashutosh</span>
-      </div>
-      <div class="info-row">
-        <span class="label">Last Name</span>
-        <span class="value">Patil</span>
-      </div>
-      <div class="info-row">
-        <span class="label">Date Of Birth</span>
-        <span class="value">DD/MM/YYYY</span>
-      </div>
-      <div class="info-row">
-        <span class="label">Gender</span>
-        <span class="value">Male</span>
-      </div>
-      <div class="info-row">
-        <span class="label">Email Address</span>
-        <span class="value">ashutosh.patil1409@gmail.com</span>
-      </div>
-      <div class="info-row">
-        <span class="label">Mobile Number</span>
-        <span class="value">9130747809</span>
+    <!-- Single address card -->
+    <div class="address-card">
+      <h4>Ashutosh Patil</h4>
+      <p>Madhala Pada, Dolvi</p>
+      <p>Pen, Raigad, Maharashtra – 402107</p>
+      <p>Mobile: +91 9890066405</p>
+
+      <div class="address-actions">
+        <button>Edit</button>
+        <button>Delete</button>
       </div>
     </div>
-  </div>
+
+    <!-- Another sample card -->
+    <div class="address-card">
+      <h4>Work</h4>
+      <p>3rd Floor, TechPark Tower</p>
+      <p>Navi Mumbai, Maharashtra – 400703</p>
+      <p>Mobile: +91 9876543210</p>
+
+      <div class="address-actions">
+        <button>Edit</button>
+        <button>Delete</button>
+      </div>
+    </div>
+  </section>
+
 
 </body>
+
 </html>
