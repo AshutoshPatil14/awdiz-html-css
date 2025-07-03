@@ -1,108 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>Delivery Addresses</title>
-<style>
-/* ─── Delivery‑content container ─────────────────────────────── */
-.delivery-content{
-  padding: 30px 40px;
-  background:#fff;                /* keep same white panel look */
-  font-family: Arial, sans-serif;
-}
+  <title>Order Placed Successfully</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e6f9f1;
+      margin: 0;
+      padding: 0;
+    }
 
-/* ─── Headline ───────────────────────────────────────────────── */
-.delivery-content h2{
-  margin-top:0;
-  margin-bottom:20px;
-  font-size:22px;
-  font-weight:600;
-}
+    .container {
+      max-width: 700px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    }
 
-/* ─── Address card ───────────────────────────────────────────── */
-.address-card{
-  background:#fff;
-  border:1px solid #ddd;
-  border-radius:12px;
-  padding:20px 24px;
-  margin-bottom:20px;
-  box-shadow:0 2px 5px rgba(0,0,0,.05);
-}
+    h1 {
+      color: #28a745;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
 
-.address-card h4{
-  margin:0 0 6px 0;
-  font-size:16px;
-  font-weight:700;
-}
+    .success-icon {
+      font-size: 50px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
 
-.address-card p{
-  margin:3px 0;
-  color:#555;
-}
+    .summary {
+      text-align: left;
+      margin-top: 30px;
+    }
 
-/* ─── Action buttons ─────────────────────────────────────────── */
-.address-actions{
-  margin-top:12px;
-}
+    .summary h3 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+    }
 
-.address-actions button{
-  background:#0066cc;
-  color:#fff;
-  border:none;
-  padding:8px 18px;
-  margin-right:10px;
-  border-radius:6px;
-  cursor:pointer;
-  font-size:14px;
-}
+    .summary p {
+      margin: 8px 0;
+      font-size: 16px;
+    }
 
-.address-actions button:hover{
-  background:#004999;
-}
+    .btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #e4002b;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
 
-/* ─── Responsive tweak (optional) ─────────────────────────────── */
-@media (max-width:600px){
-  .delivery-content{padding:20px;}
-  .address-card{padding:16px;}
-}
-</style>
+    .btn:hover {
+      background-color: #b80023;
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- ─── Delivery Addresses Section ───────────────────────────── -->
-  <section class="delivery-content">
-    <h2>My Delivery Addresses</h2>
+  <div class="container">
+    <div class="success-icon">✔</div>
+    <h1>Your order has been placed!</h1>
+    <p>Thank you for shopping with Reliance Digital.</p>
 
-    <!-- Single address card -->
-    <div class="address-card">
-      <h4>Ashutosh Patil</h4>
-      <p>Madhala Pada, Dolvi</p>
-      <p>Pen, Raigad, Maharashtra – 402107</p>
-      <p>Mobile: +91 9890066405</p>
-
-      <div class="address-actions">
-        <button>Edit</button>
-        <button>Delete</button>
-      </div>
+    <div class="summary">
+      <h3>Order Summary</h3>
+      <p><strong>Product:</strong> Google Pixel 9a, 256 GB, 8 GB RAM, Obsidian</p>
+      <p><strong>Quantity:</strong> 2</p>
+      <p><strong>Total Amount:</strong> ₹97,998</p>
+      <p><strong>Delivery Address:</strong> Madhala Pada, Dolvi, Pen, Raigad, Maharashtra - 402107</p>
+      <p><strong>Expected Delivery:</strong> Between <strong>5th July - 8th July</strong></p>
+      <p><strong>Payment Mode:</strong> Credit Card</p>
     </div>
 
-    <!-- Another sample card -->
-    <div class="address-card">
-      <h4>Work</h4>
-      <p>3rd Floor, TechPark Tower</p>
-      <p>Navi Mumbai, Maharashtra – 400703</p>
-      <p>Mobile: +91 9876543210</p>
-
-      <div class="address-actions">
-        <button>Edit</button>
-        <button>Delete</button>
-      </div>
-    </div>
-  </section>
-
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
 
 </body>
-
 </html>

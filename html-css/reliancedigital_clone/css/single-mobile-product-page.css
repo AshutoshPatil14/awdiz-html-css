@@ -44,6 +44,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* padding-top: 12px; */
 }
 
 .logo {
@@ -89,6 +90,15 @@ header {
   cursor: pointer;
 }
 
+.profile-item a{
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
 .profile-item img {
   width: 24px;
   height: 24px;
@@ -96,6 +106,7 @@ header {
 }
 
 .profile-item span {
+  text-decoration: none;
   font-size: 12px;
   margin-top: 4px;
 }
@@ -107,6 +118,7 @@ header {
 .lower-header {
   background-color: #ffffff;
   padding: 10px 32px;
+  overflow: hidden;
   overflow-x: scroll;
 }
 
@@ -115,7 +127,14 @@ header {
   /* flex-wrap: wrap; */
   align-items: center;
   justify-content: flex-start;
+  overflow: hidden;
+  overflow-x: scroll;
+
   gap: 20px;
+}
+
+.lower-header nav::-webkit-scrollbar {
+  display: none;
 }
 
 .lower-header nav a {
@@ -136,6 +155,10 @@ header {
 
 .header-navs img {
   width: 30%;
+}
+
+.filter {
+  display: none;
 }
 
 /* header section ends here */

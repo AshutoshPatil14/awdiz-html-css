@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Reliance Digital</title>
-    <link rel="stylesheet" href="../css/logreg.css">
+    <title>Payment Page | Reliance Digital</title>
+    <link rel="stylesheet" href="../css/payment.css">
 </head>
 
 <body>
@@ -125,46 +125,45 @@
     </header>
 
     <main>
-        <div class="reg-form">
-            <form class="form">
-                <img src="../images/logo.png" alt="Reliance Digital">
+        <h2>Complete Your Payment</h2>
 
-                <h2>Create your account</h2>
-                <label for="fullname">Full Name</label>
-                <input type="text" name="firstname" id="firstname" placeholder="e.g. Ted Mosby">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="e.g. ted@gmail.com">
-                <label for="number">Mobile Number</label>
-                <input type="tel" name="number" id="number" placeholder="e.g. 9876543210" required minlength="10"
-                    maxlength="10">
+        <form class="payment-form">
+            <div>
+                <label for="paymentMode">Payment Mode</label>
+                <select id="paymentMode" required>
+                    <option value="">-- Select --</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                    <option value="upi">UPI</option>
+                    <option value="netbanking">Net Banking</option>
+                </select>
+            </div>
 
-                <label for="gender">Gender</label>
-                <div class="gender-options">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                    <label><input type="radio" name="gender" value="other"> Other</label>
+            <div>
+                <label for="name">Cardholder Name</label>
+                <input type="text" id="name" placeholder="e.g. Ted Mosby" required>
+            </div>
+
+            <div>
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" required>
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                <div style="flex: 1;">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" placeholder="MM/YY" required>
                 </div>
 
-                <div class="register-as">
-                    <label for="registerAs">Register As</label>
-                    <select id="registerAs" name="registerAs" required>
-                        <option value="user">User</option>
-                        <option value="seller">Seller</option>
-                    </select>
+                <div style="flex: 1;">
+                    <label for="cvv">CVV</label>
+                    <input type="password" id="cvv" placeholder="123" required>
                 </div>
+            </div>
 
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required minlength="8" maxlength="16" required
-                    placeholder="Create Password">
-                <label for="cpassword">Confirm Password</label>
-                <input type="password" name="cpassword" id="cpassword" required minlength="8" maxlength="16" required
-                    placeholder="Confirm Password">
-                <button type="submit">Register</button>
-                <p class="login-link">
-                    Already have an account? <a href="login.html">Login here</a>
-                </p>
-            </form>
-        </div>
+
+            <button href="./payment-success.html" type="submit" class="payment-button">Pay ₹97,998</button>
+        </form>
     </main>
 
     <footer>

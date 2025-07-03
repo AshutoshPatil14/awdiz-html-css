@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Reliance Digital</title>
-    <link rel="stylesheet" href="../css/logreg.css">
+    <title>Add Product | Reliance Digital</title>
+    <link rel="stylesheet" href="../css/add-product.css">
 </head>
 
 <body>
+
 
     <header>
         <div class="upper-header">
@@ -125,46 +126,58 @@
     </header>
 
     <main>
-        <div class="reg-form">
-            <form class="form">
-                <img src="../images/logo.png" alt="Reliance Digital">
 
-                <h2>Create your account</h2>
-                <label for="fullname">Full Name</label>
-                <input type="text" name="firstname" id="firstname" placeholder="e.g. Ted Mosby">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="e.g. ted@gmail.com">
-                <label for="number">Mobile Number</label>
-                <input type="tel" name="number" id="number" placeholder="e.g. 9876543210" required minlength="10"
-                    maxlength="10">
+        <div class="container">
+            <h2>Add New Product</h2>
 
-                <label for="gender">Gender</label>
-                <div class="gender-options">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                    <label><input type="radio" name="gender" value="other"> Other</label>
-                </div>
+            <form id="add-product-form">
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" placeholder="Google Pixel 9a" required>
 
-                <div class="register-as">
-                    <label for="registerAs">Register As</label>
-                    <select id="registerAs" name="registerAs" required>
-                        <option value="user">User</option>
-                        <option value="seller">Seller</option>
-                    </select>
-                </div>
+                <label for="brand">Brand</label>
+                <input type="text" id="brand" placeholder="Google" required>
 
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required minlength="8" maxlength="16" required
-                    placeholder="Create Password">
-                <label for="cpassword">Confirm Password</label>
-                <input type="password" name="cpassword" id="cpassword" required minlength="8" maxlength="16" required
-                    placeholder="Confirm Password">
-                <button type="submit">Register</button>
-                <p class="login-link">
-                    Already have an account? <a href="login.html">Login here</a>
-                </p>
+                <label for="category">Category</label>
+                <select id="category" required>
+                    <option value="">-- Select --</option>
+                    <option>Mobile</option>
+                    <option>Laptop</option>
+                    <option>TV</option>
+                    <option>Appliances</option>
+                </select>
+
+                <label for="price">Price (₹)</label>
+                <input type="number" id="price" placeholder="49999" required>
+
+                <label for="stock">Stock Quantity</label>
+                <input type="number" id="stock" required>
+
+                <label for="ram">RAM</label>
+                <input type="text" id="ram" placeholder="8 GB">
+
+                <label for="storage">Storage</label>
+                <input type="text" id="storage" placeholder="256 GB">
+
+                <label for="processor">Processor</label>
+                <input type="text" id="processor" placeholder="Google Tensor G3">
+
+                <label for="camera">Camera</label>
+                <input type="text" id="camera" placeholder="50 MP + 12 MP">
+
+                <label for="connectivity">Connectivity</label>
+                <input type="text" id="connectivity" placeholder="5G, Wi-Fi, Bluetooth">
+
+                <label for="description">Product Description</label>
+                <textarea id="description" placeholder="Enter detailed product description"></textarea>
+
+                <label for="image">Product Image</label>
+                <input type="file" id="image" accept="image/*">
+
+                <button type="submit" class="submit-btn">Add Product</button>
             </form>
         </div>
+
+
     </main>
 
     <footer>

@@ -48,6 +48,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* padding-top: 12px; */
 }
 
 .logo {
@@ -93,6 +94,15 @@ header {
   cursor: pointer;
 }
 
+.profile-item a{
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
 .profile-item img {
   width: 24px;
   height: 24px;
@@ -100,6 +110,7 @@ header {
 }
 
 .profile-item span {
+  text-decoration: none;
   font-size: 12px;
   margin-top: 4px;
 }

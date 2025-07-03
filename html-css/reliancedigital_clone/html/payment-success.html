@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Reliance Digital</title>
-    <link rel="stylesheet" href="../css/logreg.css">
+    <title>Payment Success | Reliance Digital</title>
+    <link rel="stylesheet" href="../css/payment-success.css">
 </head>
 
 <body>
@@ -125,45 +125,31 @@
     </header>
 
     <main>
-        <div class="reg-form">
-            <form class="form">
-                <img src="../images/logo.png" alt="Reliance Digital">
 
-                <h2>Create your account</h2>
-                <label for="fullname">Full Name</label>
-                <input type="text" name="firstname" id="firstname" placeholder="e.g. Ted Mosby">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="e.g. ted@gmail.com">
-                <label for="number">Mobile Number</label>
-                <input type="tel" name="number" id="number" placeholder="e.g. 9876543210" required minlength="10"
-                    maxlength="10">
+        <div class="container">
+            <div class="success-icon">✔</div>
+            <h1>Your order has been placed!</h1>
+            <p>Thank you for shopping with Reliance Digital.</p>
 
-                <label for="gender">Gender</label>
-                <div class="gender-options">
-                    <label><input type="radio" name="gender" value="male"> Male</label>
-                    <label><input type="radio" name="gender" value="female"> Female</label>
-                    <label><input type="radio" name="gender" value="other"> Other</label>
+            <div class="summary">
+                <h3>Order Summary</h3>
+                <div class="order-summary">
+                    <div class="order-img">
+                        <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/original/lDiLDzASGg-google-pixel9a-5g-494494547-i-1-1200wx1200h.jpeg"
+                                alt="Product Image">
+                    </div>
+                    <div class="order-details">
+                        <p><strong>Product:</strong> Google Pixel 9a, 256 GB, 8 GB RAM, Obsidian</p>
+                        <p><strong>Quantity:</strong> 2</p>
+                        <p><strong>Total Amount:</strong> ₹97,998</p>
+                        <p><strong>Delivery Address:</strong> Pride City, Borgaon Road, Pen, Raigad, Maharashtra</p>
+                        <p><strong>Expected Delivery:</strong> Tomorrow</p>
+                        <p><strong>Payment Mode:</strong> Credit Card</p>
+                    </div>
                 </div>
+            </div>
 
-                <div class="register-as">
-                    <label for="registerAs">Register As</label>
-                    <select id="registerAs" name="registerAs" required>
-                        <option value="user">User</option>
-                        <option value="seller">Seller</option>
-                    </select>
-                </div>
-
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required minlength="8" maxlength="16" required
-                    placeholder="Create Password">
-                <label for="cpassword">Confirm Password</label>
-                <input type="password" name="cpassword" id="cpassword" required minlength="8" maxlength="16" required
-                    placeholder="Confirm Password">
-                <button type="submit">Register</button>
-                <p class="login-link">
-                    Already have an account? <a href="login.html">Login here</a>
-                </p>
-            </form>
+            <a href="index.html" class="btn">Back to Home</a>
         </div>
     </main>
 
